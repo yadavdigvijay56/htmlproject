@@ -10,7 +10,9 @@ header{
     color: rgb(255, 255, 255);
     text-align: center;
     padding: 10px;
-    position: fixed;
+    position: sticky;
+    top: 0;
+    left: 0;
     z-index: 10;
     width: 100%;
 }
@@ -555,4 +557,251 @@ tr:nth-child(even) {
     font-weight: bold;
     color: #fff;
    
+}
+
+/* Shop page */
+.shophead{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    margin-top: 20px;
+    color: black;
+    margin-top: 80px;
+    font-family: sans-serif;
+}
+.shophead{
+    background-image: url(/Images/player\ bg.jpg);
+}
+.shop{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+}
+.scont{
+    padding: 25px;
+}
+.sbox{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    margin-left: 15px;
+    width: 350px;
+    /* background: #868686; */
+    margin-top: 50px;
+}
+.shophor{
+    background: grey;
+    height: 250px;
+    width: 80vw;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 150px;
+    margin-left: 175px;
+}
+.shopnew{
+    background: grey;
+    height: 550px;
+    width: 80vw;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    margin-left: 175px;
+}
+.newcol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 900px;
+    height: 550px; 
+    background: rgb(204, 68, 68);  
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px rgb(0, 0, 0);
+}
+
+/* Racers */
+
+.racer-head h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    margin-top: 20px;
+    font-weight: bold;
+    color: black;
+    margin-top: 80px;
+    font-family: sans-serif;
+}
+.racer-cont{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+}
+.racer-card{
+   background: grey;
+   height: 750px;
+   width: 500px;
+   margin-top: 20px;
+   margin-left: 10px;
+   margin-left: 50px;
+   border-radius: 20PX;
+   box-shadow: 0px 0px 50px rgb(0, 0, 0);
+   overflow: hidden;
+
+}
+.racer-img{
+    height: 550px;
+    width: 500px;
+    background: burlywood;
+}
+.racer-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.racer-name{
+   height: 200px;
+   width: 100%;
+   background: #ffffff;
+}
+#cr-1{
+    font-size: 60px;
+    font-weight: bold;
+    padding: 20px;
+    color: black;
+}
+#cr-2{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: -40px;
+    margin-left: 25px;
+    color: #000;
+}
+.racer-card:hover .racer-name{
+    color: rgb(252, 248, 248);
+    background-color: #030303;
+    transition: .5s ease-in-out;
+
+}
+.racer-card:hover #cr-1{
+    color: rgb(252, 248, 248);
+}
+.racer-card:hover #cr-2{
+    color: white;
+}
+.racer-card:hover img{
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+/* Tickets page */
+
+.ticket-head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    font-weight: bold;
+    color: black;
+    font-family: sans-serif;
+}
+.ticket-body{
+    background-color: #868686;
+    width:100%;
+    height: 700px;
+    display: flex;
+    
+    margin-top: 20px;
+}
+.ticket-cont{
+    position: relative;
+    margin-left: 150px;
+    display: flex;
+    height: 600px;
+    width: 800px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+.samlltickets{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.small-tickets{
+    background: grey;
+    height: 280px;
+    width: 350px;
+}
+.large-tickets{
+    position: absolute;
+    height: 600px;
+    width: 800px;
+}
+.large-tickets img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.overlay-ticket{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+.ticket-cont:hover .overlay-ticket{
+    opacity: 1;
+}
+.small-tickets img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.small-tickets{
+    position: relative;
+}
+.soverlay-ticket{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+.small-tickets:hover .soverlay-ticket{       
+    opacity: 1;
+}
+
+
+/* try */
+.modal{
+    height: 50px;
+    width: 50px;
 }
