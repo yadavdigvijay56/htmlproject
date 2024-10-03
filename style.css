@@ -16,36 +16,54 @@ header{
     z-index: 10;
     width: 100%;
 }
+.mlogo{
+    position: absolute;
+    margin-left: -500px;
+    margin-top: -10px;
+    font-size:35px;
+    font-family:monospace;
+    font-weight: 700;
+}
+.mlogo a{
+    text-decoration: none;
+}
+
 .vih{
     position: absolute;
     margin-top: -400px;
     margin-left: 50px;
 }
-.vih h1{
-    font-size: 60px;
-    font-weight: 800;
+.vih-text h1{
+    font-size: 40px;
+    font-weight: 700;
     color: rgb(255, 255, 255);
     margin-bottom: 80px;
-    margin-top: -62px;
-    margin-left: 110px;
+    margin-top: -53px;
+    margin-left: 170px;
 }
-.vih button{
-    padding: 10px;
-    font-size: 20px;
+.vih img{
+   width: 600px;
+   margin-top:120px;
+}
+.vih-btn button{
+    position: absolute;
+    padding: 5px;
+    font-size: 18px;
     font-weight: 800;
-    margin-left: 450px;
-    color: rgb(0, 0, 0);
-    background: red;
-    border: none;
-    border-radius: 10px;
+    margin-left: 1500px;
+    margin-top: -135px;
+    background-color: rgb(250, 0, 0);
+    border-radius: 5px;
+    border: 0;
 }
-.vih button a{
+.vih-btn button a{
     text-decoration: none;
     color: rgb(255, 255, 255);
+    
 }
-.vih button:hover{
+.vih-btn button:hover {
     background: rgb(255, 166, 0);
-    transform: scale(1.3);
+    transform: scale(1.2);
     transition: .5s;
 }
 .nav-col-sm-12{
@@ -60,14 +78,19 @@ ul li a{
     text-decoration: none;
     padding: 20px;
 }
+.nav-col-sm-12 ul li a:hover{
+    background: rgb(250, 0, 0);
+    border-radius: 10px;
+    transition: .5s ease-out;
+}
+
 .Upcoming h1{
     display: flex;
     width: 87%;
-    font-size: 60px;
     margin-top: 50px;
     margin-left: 105px;
-    font-weight: 800;
-    border-bottom: 5px double rgb(255, 166, 0);
+    font-weight: 700;
+    /* border-bottom: 5px double rgb(255, 166, 0); */
 }
 
 .card-col-sm-12{
@@ -83,11 +106,11 @@ ul li a{
     justify-content: center;
     background: grey;
     width: 600px;
-    height: 400px;
+    height: 320px;
     margin: 5px;
+    margin-left: 30px;
+    margin-right: 30px;
     overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 5px 5px 30px rgb(14, 14, 14);
 }
 .card-col:hover .card-body{
     right: 0;
@@ -109,46 +132,44 @@ ul li a{
     right: -100%;
     position: absolute;
     background: rgba(10, 10, 10, 0.356);
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(1px);
     display: flex;
     flex-direction: column;
     text-align: center;
     transition: .5s;
 }
 .card-title{
-    padding: 40px;
+    padding: 30px;
 }
 .card-body h1{
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 800;
     color: rgb(250, 250, 250);
-    text-shadow: 0px 0px 15px rgb(253, 253, 253);
+    
 }
 .card-text{
-    font-size: 28px;
+    font-size: 20px;
     font-weight: bold;
     color: white;
-    letter-spacing: -2px;
 }
 .card-body button{
     border: none;
-    width: 30%;
-    padding: 10px;
-    font-size: 20px;
-    font-weight: 800;
+    width: 20%;
+    padding: 2px;
+    font-size: 18px;
+    font-weight: 700;
     margin-top: 10px;
-    margin-left: 200px;
+    margin-left: 240px;
     background: red;
-    border-radius: 25px;
+    border-radius: 10px;
 }
 .card-body button a{
     text-decoration: none;
     color: white;
-    text-shadow: 0px 0px 10px rgb(255, 255, 255);
 }
 .card-body button:hover{       
     background: rgb(255, 166, 0);
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: .5s;
 }
 .new{
@@ -165,9 +186,9 @@ ul li a{
 .new h1 a{
     text-decoration: none;
     color: rgb(0, 0, 0);
-    font-size: 80px;
-    font-weight: 800;
-    letter-spacing: -5px;
+    font-size:45px;
+    font-weight: 700;
+  
 }
 
 .new-col-10{
@@ -195,8 +216,9 @@ ul li a{
     display: flex;
 }
 .newi{
+    position:absolute;
     height: 300px;
-    width: 400px;
+    width: 300px;
     /* background: white; */
 }
 .newi img{
@@ -206,27 +228,31 @@ ul li a{
     border-radius:20px 0px 0px 20px;
 }
 .newt{
+    font-size:15px;
     margin: 10px;
+    padding: 50px;
+    margin-left: 300px;
 }
 .dhead{
     display: flex;
     justify-content: center;
+    width: 80vw;
+    margin-left: 180px;
     margin-top: 50px;
     margin-bottom: 40px;
-    background-image: url(/Images/dbg.webp);
+    background-image: url(/Images/player\ bg.jpg);
     background-repeat: repeat;
     background-size: cover;
+    
 }
 .dhead h1{
+    font-size: 48px;
     color: rgb(0, 0, 0);
-    font-size: 100px;
     font-weight: 700;
-    letter-spacing:;
 }
 .dhead h1 a{
     text-decoration: none;
-    color: rgb(255, 255, 255);
-    transition: 2s;
+    color: rgb(0, 0, 0);
 }
 .player{
     /* background: #000; */
@@ -243,24 +269,27 @@ ul li a{
 .splayer{
     display: flex;
     justify-content: center;
-    background: grey;
+    /* background: grey; */
     background: url(/Images/player\ bg.jpg);
     height: 200px;
+    width: 80vw;
+    margin-left: 180px;
+    
 }
 
 #p1, #p3{
     display:inline;
     background: rgb(250, 250, 250);
-    height: 280px;
-    width: 350px;
+    height: 240px;
+    width: 300px;
     margin-top: -130px;
     border-radius: 20px 20px 0px 0px;
     box-shadow: 1px 1px 5px rgb(0, 0, 0);
 }
 #p2{
     background: rgb(250, 250, 250);
-    height: 300px;
-    width: 400px;
+    height: 260px;
+    width: 300px;
     margin-right: 15px;
     margin-left: 15px;
     margin-top: -150px;
@@ -277,16 +306,15 @@ ul li a{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: 900;
+    font-weight: 700;
 }
 .rank h1{
-    font-size: 150px;
-    text-shadow: 0px 0px 12px rgb(0, 0, 0),
-    2px 2px 12px rgb(134, 134, 134);
+    font-size: 90px;
+    text-shadow: 1px 1px 6px rgb(0, 0, 0);
     padding-left: 30px;
-    margin-top: 50px;
+    margin-top: 130px;
     font-weight: 900;
-    color:rgb(226, 226, 226);
+    color:rgb(255, 255, 255);
 
 }
 .upimge{
@@ -297,15 +325,14 @@ ul li a{
 }
 .name{
     width: 100%;
-    height: 90px;
+    height: 80px;
     border-radius: 0 0 12px 12px;
     background-color: rgb(73, 73, 73);
 }
 .name h1{
     display: flex;
-    justify-content: center;
     padding:20px;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 900;
     color: white;
 }
@@ -336,10 +363,11 @@ ul li a{
     justify-content: center;
     margin-top: 150px;
     font-family: 'Play', sans-serif;
-    font-size: larger;
     font-weight: bolder;
-    box-shadow: 0px 0px 20px rgb(0, 0, 0),
-    0px 0px 20px rgb(7, 7, 7);
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
+}
+.mtable td{
+    color: #000;
 }
 .ranking{
     display: grid;
@@ -350,8 +378,8 @@ table{
     width: 80vw;
 }
 th{
-    font-size: 40px;
-    font-weight: 900;
+    font-size: 28px;
+    font-weight: 700;
     color: rgb(14, 14, 14);
 }
 th,td{
@@ -361,7 +389,7 @@ tr{
     border-radius: 20px;
 }
 tr:nth-child(even) {
-    background-color: rgba(143, 143, 143, 0.514);
+    background-color: rgba(219, 219, 219, 0.514);
 }
 .games{
     display: flex;
@@ -371,13 +399,13 @@ tr:nth-child(even) {
     
 }
 .games h1{
-    font-size: 90px;
-    border: 5px double red;
+    font-size: 50px;
+    /* border: 5px double red; */
     border-radius: 40px;
     width: 89%;
     font-weight: 800;
     color: rgb(0, 0, 0);
-    letter-spacing: -5px;
+    letter-spacing: -2px;
  
 }
 .youtube{
@@ -465,7 +493,7 @@ tr:nth-child(even) {
     gap: 10px;
     
 }
-.bgimg{
+/* .bgimg{
     height: 180%;
     width: 100%;
     position: absolute;
@@ -478,23 +506,21 @@ tr:nth-child(even) {
     background-attachment: fixed;
     opacity:2;
     filter: blur(8px);
-}
+} */
 .team{
     display: inline-block;
     justify-content: center;
     position: relative;
     align-items: center;
     text-align: center;
-    height: 450px;
-    width: 550px;
-    background: #868686;
-    border-radius: 20px;
-    box-shadow: 0px 0px 20px rgb(0, 0, 0),
-    0px 0px 20px rgb(7, 7, 7);
+    height: 350px;
+    width: 580px;
+    /* background: #868686; */
     overflow: hidden;
     /* box-shadow: 0px 0px 20px rgb(0, 0, 0); */
     margin-top: 90px;
-    margin-bottom: 25px;z-index: 1;
+    margin-bottom: 25px;
+    /* z-index: 1; */
 }
 .team img{
     height: 100%;
@@ -508,7 +534,10 @@ tr:nth-child(even) {
 }
 .team-title h1{
     position: relative;
-    font-size: 90px;
+    font-size: 60px;
+    font-weight: bold;
+    font-family:Verdana;
+    letter-spacing: -4px;
 }
 
 .team:hover{
@@ -522,15 +551,15 @@ tr:nth-child(even) {
     left: 0;
     width: 100%;
     height: 100%;
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(1px);
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
+    color: #ffffff;
     font-size: 60px;
     font-weight: 800;
-    letter-spacing: -3px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    
 }
 .overlay {
     position: absolute;
@@ -540,7 +569,7 @@ tr:nth-child(even) {
     height: 100%;
     color: #fff;
     background: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(2px);
     opacity: 0;
     text-align: center;
 }
@@ -592,6 +621,17 @@ tr:nth-child(even) {
     width: 350px;
     /* background: #868686; */
     margin-top: 50px;
+    padding: 10px;    
+    overflow: hidden;
+}
+.sbox:hover{
+    box-shadow: 0px 0px 20px rgb(0, 0, 0);
+}
+.simg{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
 }
 .shophor{
     background: grey;
@@ -635,7 +675,7 @@ tr:nth-child(even) {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 80px;
+    font-size: 40px;
     margin-top: 20px;
     font-weight: bold;
     color: black;
@@ -654,10 +694,9 @@ tr:nth-child(even) {
    height: 750px;
    width: 500px;
    margin-top: 20px;
+   border-bottom: 2px solid black;
    margin-left: 10px;
    margin-left: 50px;
-   border-radius: 20PX;
-   box-shadow: 0px 0px 50px rgb(0, 0, 0);
    overflow: hidden;
 
 }
@@ -718,7 +757,7 @@ tr:nth-child(even) {
     font-family: sans-serif;
 }
 .ticket-body{
-    background-color: #868686;
+    /* background-color: #868686; */
     width:100%;
     height: 700px;
     display: flex;
@@ -764,12 +803,42 @@ tr:nth-child(even) {
     left: 0;
     height: 100%;
     width: 100%;
-    background: rgb(0, 0, 0);
-    display: flex;
+    background: rgba(0, 0, 0, 0.753);
+    display: inline;
     align-items: center;
     justify-content: center;
+    text-align: center;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
+}
+.overlay-ticket h1{
+    margin-top: 150px;
+    color: #fff;
+    font-size: 60px;
+    font-weight: bold;
+}
+.overlay-ticket label{
+    text-align: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+.buy-now{
+    margin-top: 50px;
+}
+.buy-now input{ 
+    border-radius: 12px;
+    text-align: center;
+    border: none;
+    font-weight: bold;
+}
+.buy-now select{
+    background: rgba(255, 255, 255, 0.979);
+    border-radius: 12px;
+    text-align: center;
+    border: none;
+    font-weight: bold;
 }
 .ticket-cont:hover .overlay-ticket{
     opacity: 1;
@@ -788,15 +857,32 @@ tr:nth-child(even) {
     left: 0;
     height: 100%;
     width: 100%;
-    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.829);
     display: flex;
     align-items: center;
     justify-content: center;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
 }
+.soverlay-ticket h1{
+    color: #fff;
+    font-size: 60px;
+    font-weight: bold;
+}
 .small-tickets:hover .soverlay-ticket{       
     opacity: 1;
+}
+.ticket-details{
+    margin-top: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+.end-ticket{
+    margin-top: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
+    height: 100px;
+    background-image: url(/Images/player\ bg.jpg);
 }
 
 
@@ -847,7 +933,7 @@ tr:nth-child(even) {
     color: white;
     transition: .5s;
 }
-.submit-btn,.login-btn, .cancel-btn{
+.cancel-btn, .login-btn{
     background-color: rgb(255, 252, 252);
     font-size: 20px;
     font-weight: 800;
@@ -855,12 +941,24 @@ tr:nth-child(even) {
     padding: 15px;
     border: 0;
 }
-.submit-btn:hover,.login-btn:hover,.cancel-btn:hover{
-    background-color: rgb(0, 0, 0);
-    color: white;
+
+.cancel-btn:hover {
+    color: rgb(255, 0, 0);
     transition: .5s;
 }
 
+.login-btn a{
+    text-decoration: none;
+    color: black;
+   
+}
+ .login-btn a{
+    text-decoration: none;
+    color: black;
+}
+.login-btn a:hover{
+    color: rgb(2, 90, 253);
+}
 
 
 /* redbull page */
@@ -879,22 +977,15 @@ tr:nth-child(even) {
 }
 .redbull-body-content{
     margin-top: 100px;
-    width: 70vw;
-    height: 85vh;
+    margin-left: 20px;
+    width: 60vw;
+    height: 95vh;
     display: flex;
-    border-radius: 25px 25px 0px 0px;
+    border-radius: 0px 25px 0px 0px;
     /* box-shadow: 0px 0px 20px rgb(0, 0, 0); */
     background: white;   
-    border-top: 2px solid rgb(250, 0, 0);
+    border-top: 5px double red;
     border-right: 2px solid rgb(255, 0, 0);
-}
-.redbull-body-content h2{
-    position: absolute;
-    font-size: 80px;
-    font-weight: 800;
-    color: rgb(255, 255, 255);
-    font-family: sans-serif;
-    text-shadow: 2px 2px 10px rgb(0, 0, 0);;
 }
 .redbull-body-img{
     position: relative;
@@ -902,15 +993,13 @@ tr:nth-child(even) {
     margin-top: 150px;
     margin-left: 10px;
     height: 600px;
-    width: 550px;
+    width: 450px;
     background: #000;
-    border-radius: 25px;
-    box-shadow: 0px 0px 20px rgb(0, 0, 0);
 }
 .redbull-body-img img{  
     height: 100%;
     width: 100%;
-    border-radius: 25px;
+    border-radius: 5px;
     object-fit: cover;   
 }
 .redbull-body-img img:hover{
@@ -919,12 +1008,15 @@ tr:nth-child(even) {
 }
 .redbull-body-details{
     position: relative;
-    margin-top: 150px;
-    height: 600px;
+    margin-top: 50px;
+    height: 700px;
     width: 550px;
-    /* background: rgb(102, 66, 11); */
     padding-left: 50px;
-
+}
+.redbull-body-details h2{
+    font-size: 40px;
+    font-weight: 700;
+   
 }
 .team-table{
     width: 100%;
@@ -936,7 +1028,7 @@ tr:nth-child(even) {
 }
 .team-table th{
     font-size: 20px;
-    font-weight: 800;
+    font-weight: 700;
     color: black;
 }
 .team-table td{
@@ -948,19 +1040,14 @@ tr:nth-child(even) {
 .redbull-profile{
     display: inline-block;
     justify-content: center;
-    margin-left: 290px;
     background: white;
     font-size: 20px;
     width: 70vw;
-    margin-top: 10px;
-    border-radius: 25px 0 0px 0px;
-    border-right: 2px solid rgb(255, 0, 0);
-    /* background: blanchedalmond;    */
-    /* box-shadow: 0px 0px 20px rgb(0, 0, 0); */
-    padding: 30px;
+    margin-top: 80px;
+    margin-left: 5px;
+    padding: 20px;
 }
-.redbull-profile h1{
-    margin-left: 50px;
+.redbull-profile h2{
     font-size: 40px;
     font-weight: 800;
     color: rgb(0, 0, 0);
@@ -968,27 +1055,35 @@ tr:nth-child(even) {
 }
 .redull-logo{
     position: absolute;
-    height: 150px;
-    width: 400px;
-    margin-left: 680px;
-    background-image: url(/Images/redbull\ logo.avif);
+    height: 140px;
+    width: 280px;
+    /* background-image: url(/Images/redbull\ logo.avif); */
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
+}
+.redull-logo img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
-
+/* mclarean page*/
+.mclarean-body{
+    border-top:5px double orange;
+    border-right: 2px solid orange;
+}
 /* maxpage */
 
 .max-head{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-top: 50px;
+    justify-content: left;
+    margin-top: 120px;
 }
 .max-head h1{
-    font-size: 80px;
-    font-weight: 800;
+    margin-left: 170px;
+    font-size: 50px;
+    font-weight: 700;
     color: rgb(0, 0, 0);
     font-family: sans-serif;
 }
@@ -1005,10 +1100,9 @@ tr:nth-child(even) {
 }
 .max-body{
     display: flex;
- 
     width: 100%;
     height: 800px;
-    background: rgb(0, 0, 0);
+    /* background: rgb(0, 0, 0); */
 }
 .max-img{
     margin-left: 100px;
@@ -1028,6 +1122,91 @@ tr:nth-child(even) {
     align-items: center;
 }
 .player-table th, td{
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 20px;
+}
+
+
+/* Shop product page*/
+marquee{ 
+    background: red;
+    color: #000;
+    width: 80vw;
+    margin-left: 200px;
+    margin-top: 60px;
+}
+.Prodcut-head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.product-logo{
+   width: 60px;
+   height: 60px;
+}
+
+.product-logo img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.Prodcut-head h2{
+    font-size: 60px;
+    font-weight: 800;
+    color: rgb(0, 0, 0);
+    font-family: sans-serif;
+}
+
+.row-container{
+    display: flex;
+    margin-top: 50px;
+}
+.product-img{
+    display: flex;
+    background: #000;
+    margin-left: 350px;
+    height: 700px;
+    width: 700px;
+    background: #000;
+}
+.product-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.prodcut-details{   
+    height: 500px;
+    width: 600px;
+    margin-left: 50px;
+}
+.prodcut-quantity{
+    margin-top: 25px;
+   font-size: 20px;
+}
+.prodcut-quantity input{
+   border-radius: 8px;
+   text-align: center;
+}
+.prodcut-quantity select{
+    border-radius: 8px;
+    text-align: center;
+    width: 90px;
+}
+.cart-btn{
+    font-size: 20px;
+    width: 400px;
+    background: red;
+    border: 0;
+    border-radius: 8px;
+    padding: 10px;
+    color: white;
+    font-weight: 700;
+}
+.details-list{
+    margin-top: 40px;
+}
+.product-foot{
+    margin-left: 200px;
 }
